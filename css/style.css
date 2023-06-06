@@ -1,28 +1,115 @@
-/*
-RESET
- */
+/* HEADER */
+#_header {
+   height: 80px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1;
+}
+.row {
+   margin-left: 0 !important;
+   margin-right: 0 !important;
+}
 
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+/*UTILITIES*/
+.bg_primary {
+   background-color: #f8f9fa;
+}
 
- /* 
- GENERAL
- */
-
- body{
-    font-family: Arial, Helvetica, sans-serif;
- }
- 
- .container{
-    max-width: 1200px;
-    margin: 0 auto;
- }
-
- /* DEBUG */
-.debug{
+.bg_header_nav {
+   background-color: #ffffff;
+}
 
 
+.bg_search_form {
+   background-color: #e5e5e5;
+}
+
+
+.bg_sidebar {
+   background-color: #12293e;
+}
+
+.bg_header_buttons {
+   background-color: #165bba;
+}
+
+.pb_07 {
+   padding-bottom: 0.7rem
+}
+
+.w_83 {
+   width: 83%;
+}
+
+/* BOTTOM */
+#bottom {
+   margin-top: 80px;
+}
+
+/*SIDEBAR */
+#sidebar {
+   width: 50px;
+   position: fixed;
+   left: 0;
+   top: 80px;
+   height: calc(100vh - 80px);
+   z-index: 2;
+   background-image: url(../img/sidebar-bg.png);
+}
+
+/* MAIN */
+
+main {
+   width: calc(100% - 50px);
+   margin-left: 50px
+}
+
+/* MAIN-LEFT  */
+
+#main_left img {
+   width: 30px;
+   aspect-ratio: 1;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 992px) {
+   .w_lg_50 {
+       width: 50% !important;
+   }
+
+   .w_lg_67 {
+       width: 67%
+   }
+
+   #sidebar {
+       width: 150px;
+   }
+
+   main {
+       width: calc(100% - 150px);
+       margin-left: 150px
+   }
+
+}
+
+
+
+/* HOVER */
+tr:not(thead>tr):hover {
+   background-color: #e5e5e5;
+   cursor: pointer;
+}
+
+.sidebar_icon:hover {
+   background-color: #e5e5e5b4;
+   cursor: pointer;
+   transition: 0.2s;
+
+}
+
+#header_buttons .badge:hover {
+   cursor: pointer;
 }
